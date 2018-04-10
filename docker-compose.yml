@@ -1,6 +1,7 @@
 diagnostics:
     build: .
     ports:
-      - "8888:8888"
+      - "8889:8888"
     environment:
       DOCKER_HOST_IP:
+      DOCKER_DIAGNOSTICS_PORT: 8889

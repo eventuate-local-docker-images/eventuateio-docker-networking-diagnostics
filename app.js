@@ -2,7 +2,7 @@ var request = require('request');
 var http = require("http");
 
 var myIP = process.env.DOCKER_HOST_IP;
-var myPort = process.env.DOCKER_DIAGNOSTICS_PORT || 8888;
+var myPort = process.env.DOCKER_DIAGNOSTICS_PORT || 8889;
 var url = 'http://' + myIP + ":" + myPort;
 
 var http = require('http');
