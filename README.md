@@ -13,3 +13,9 @@ You build a container that runs a simple NodeJS application that verifies that i
 
 To verify that `DOCKER_HOST_IP` is set correctly, simply run `docker-compose up`
 The application will display success or error information.
+
+Alternatively, you can run this command
+
+```
+docker run -p 8889:8888 -e DOCKER_DIAGNOSTICS_PORT=8889 -e DOCKER_HOST_IP --rm eventuateio/eventuateio-docker-networking-diagnostics:0.2.0.RELEASE
+```

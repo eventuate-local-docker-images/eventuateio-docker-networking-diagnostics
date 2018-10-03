@@ -19,7 +19,7 @@ var server = http.createServer(function (request, response) {
   response.end("Hello World\n");
 });
 
-server.listen(myPort, function () {
+server.listen(8888, function () {
   console.log("Server running on port: " + myPort);
   console.log("About to make HTTP request to self");
   setTimeout(function () {
